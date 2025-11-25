@@ -1,0 +1,43 @@
+
+const searchBtn = document.getElementById("searchBtn");
+const searchInput = document.getElementById("searchInput");
+
+searchBtn.addEventListener("click", () => {
+    const keyword = searchInput.value.toLowerCase().trim();
+    if (keyword === "") {
+        alert("Vui lòng nhập từ khóa cần tìm!");
+        return;
+    }
+
+    if (keyword.includes("thế chiến") || keyword.includes("ww2")) {
+        alert("Gợi ý: Xem video 'Thế chiến thứ hai - Những sự kiện chính'");
+    } else if (keyword.includes("chiến tranh lạnh") || keyword.includes("cold war")) {
+        alert("Gợi ý: Xem video 'Chiến tranh Lạnh - Trật tự thế giới mới'");
+    } else if (keyword.includes("la mã") || keyword.includes("rome")) {
+        alert("Gợi ý: Tìm hiểu thời kỳ Cổ đại - Đế chế La Mã");
+    } else {
+        alert("Không tìm thấy sự kiện phù hợp. Thử lại nhé!");
+    }
+
+    searchInput.value = "";
+});
+
+
+const quizForm = document.getElementById("quizForm");
+const quizResult = document.getElementById("quizResult");
+
+quizForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const answer = quizForm.year.value;
+
+    if (answer === "1939") {
+        quizResult.textContent = "✅ Chính xác! Thế chiến II bắt đầu năm 1939.";
+        quizResult.style.color = "green";
+    } else if (answer) {
+        quizResult.textContent = "❌ Sai rồi. Hãy thử lại nhé!";
+        quizResult.style.color = "red";
+    } else {
+        quizResult.textContent = "⚠️ Vui lòng chọn một đáp án!";
+        quizResult.style.color = "orange";
+    }
+});
