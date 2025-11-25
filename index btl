@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Học Lịch Sử Thế Giới Qua Video</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Học Lịch Sử Thế Giới Qua Video</h1>
+        <nav>
+            <a href="#home">Trang chủ</a>
+            <a href="#video">Video chi tiết</a>
+            <a href="#resources">Tài nguyên</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2>Trang chủ</h2>
+            <div class="timeline">
+                <h3>Danh mục thời kỳ lịch sử</h3>
+                <ul>
+                    <li>Cổ đại</li>
+                    <li>Trung đại</li>
+                    <li>Cận đại</li>
+                    <li>Hiện đại</li>
+                </ul>
+            </div>
+
+            <div class="featured-videos">
+                <h3>Video nổi bật</h3>
+                <div class="video-card">
+                    <video width="250" controls>
+                        <source src="Chiến tranh thế giới thứ 2.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ video.
+                    </video>
+                    <p>Thế chiến thứ hai - Những sự kiện chính</p>
+                </div>
+                <div class="video-card">
+                    <video width="250" controls>
+                        <source src="Chiến tranh lạnh.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ video.
+                    </video>
+                    <p>Chiến tranh Lạnh - Trật tự thế giới mới</p>
+                </div>
+            </div>
+
+            <div class="search-event">
+                <h3>Tìm kiếm sự kiện lịch sử</h3>
+                <input id="searchInput" type="text" placeholder="Nhập tên sự kiện, năm, nhân vật...">
+                <button id="searchBtn">Tìm kiếm</button>
+            </div>
+        </section>
+
+
+        <section id="video">
+            <h2>Video Chi Tiết</h2>
+            <div class="video-detail">
+                <video width="500" controls>
+                    <source src="video chi tiết.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ video.
+                </video>
+
+                <div class="timeline">
+                    <h3>Timeline sự kiện</h3>
+                    <ul>
+                        <li>1939: Khởi đầu Thế chiến II</li>
+                        <li>1941: Trận Trân Châu Cảng</li>
+                        <li>1945: Đức đầu hàng, kết thúc chiến tranh</li>
+                    </ul>
+                </div>
+
+                <div class="quiz">
+                    <h3>Quiz kiểm tra kiến thức</h3>
+                    <form id="quizForm">
+                        <label>Thế chiến II bắt đầu năm nào?</label><br>
+                        <input type="radio" name="year" value="1914"> 1914<br>
+                        <input type="radio" name="year" value="1939"> 1939<br>
+                        <input type="radio" name="year" value="1945"> 1945<br>
+                        <button type="submit">Trả lời</button>
+                    </form>
+                    <p id="quizResult"></p>
+                </div>
+            </div>
+        </section>
+
+        <!--tài nguyên-->
+        <section id="resources">
+            <h2>Trang Tài Nguyên</h2>
+
+            <div class="ebooks">
+                <h3>Tải sách điện tử</h3>
+                <ul>
+                    <li><a href="#">Lịch sử thế giới cổ đại (PDF)</a></li>
+                    <li><a href="#">Chiến tranh lạnh và ảnh hưởng (ePub)</a></li>
+                </ul>
+            </div>
+
+            <div class="map">
+                <h3>Bản đồ tương tác</h3>
+                <img src="bản-đồ-chiến-tranh-thế-giới-thứ-2.jpg" Bản đồ lịch sử" width="400">
+            </div>
+
+            <div class="forum">
+                <h3>Diễn đàn thảo luận</h3>
+                <ul>
+                    <li><b>Trung Cổ Châu Âu:</b> Những cuộc thập tự chinh</li>
+                    <li><b>Chủ đề:</b> Chiến tranh Việt Nam - Thảo luận sôi nổi</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bản quyền &copy; 2025 - Website học lịch sử qua video</p>
+    </footer>
+</body>
+
+</html>
